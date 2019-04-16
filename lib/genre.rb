@@ -18,8 +18,8 @@ def songs
 end
 
 def artists
-  Song.all.select do |song|
-    song.artist == self
+  songs.map do |song|
+    song.artist
   end
 end
 end
