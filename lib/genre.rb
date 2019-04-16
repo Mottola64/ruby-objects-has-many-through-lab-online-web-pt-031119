@@ -17,4 +17,9 @@ def songs
   end
 end
 
+def artists
+  Song.all.select do |song|
+    song.artist == self
+  end
+
 end
